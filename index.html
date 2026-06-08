@@ -171,20 +171,25 @@
 
   .hero-right {
     position: relative;
-    overflow: hidden;
     background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero-img-wrap {
-    position: absolute;
-    inset: 0;
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.13);
     animation: fadeScale 1.4s 0.2s both;
   }
 
   .hero-img-wrap img {
     width: 100%;
     height: 100%;
-    
+    object-fit: cover;
     object-position: center top;
   }
 
